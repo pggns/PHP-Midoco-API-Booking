@@ -11,31 +11,31 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for GetAccessibleComponentsByRoleRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class GetAccessibleComponentsByRoleRequest extends AbstractStructBase
 {
     /**
      * The MidocoAccessibleComponentByRole
      * Meta information extracted from the WSDL
-     * - minOccurs: 1
      * - ref: MidocoAccessibleComponentByRole
-     * @var \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType
+     * @var \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType|null
      */
-    protected \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $MidocoAccessibleComponentByRole;
+    protected ?\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $MidocoAccessibleComponentByRole = null;
     /**
      * Constructor method for GetAccessibleComponentsByRoleRequest
      * @uses GetAccessibleComponentsByRoleRequest::setMidocoAccessibleComponentByRole()
      * @param \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole
      */
-    public function __construct(\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole)
+    public function __construct(?\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole = null)
     {
         $this
             ->setMidocoAccessibleComponentByRole($midocoAccessibleComponentByRole);
     }
     /**
      * Get MidocoAccessibleComponentByRole value
-     * @return \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType
+     * @return \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType|null
      */
-    public function getMidocoAccessibleComponentByRole(): \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType
+    public function getMidocoAccessibleComponentByRole(): ?\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType
     {
         return $this->MidocoAccessibleComponentByRole;
     }
@@ -44,7 +44,7 @@ class GetAccessibleComponentsByRoleRequest extends AbstractStructBase
      * @param \Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole
      * @return \Pggns\MidocoApi\Booking\StructType\GetAccessibleComponentsByRoleRequest
      */
-    public function setMidocoAccessibleComponentByRole(\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole): self
+    public function setMidocoAccessibleComponentByRole(?\Pggns\MidocoApi\Booking\StructType\MidocoAccessibleComponentByRoleType $midocoAccessibleComponentByRole = null): self
     {
         $this->MidocoAccessibleComponentByRole = $midocoAccessibleComponentByRole;
         

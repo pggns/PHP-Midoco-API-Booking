@@ -43,6 +43,11 @@ class PaymentType extends AbstractStructEnumBase
      */
     const VALUE_PP = 'PP';
     /**
+     * Constant for value 'PAYBYLINK'
+     * @return string 'PAYBYLINK'
+     */
+    const VALUE_PAYBYLINK = 'PAYBYLINK';
+    /**
      * Return allowed values
      * @uses self::VALUE_AGENCY
      * @uses self::VALUE_SUPPLIER
@@ -50,6 +55,7 @@ class PaymentType extends AbstractStructEnumBase
      * @uses self::VALUE_DEBIT
      * @uses self::VALUE_CASH
      * @uses self::VALUE_PP
+     * @uses self::VALUE_PAYBYLINK
      * @return string[]
      */
     public static function getValidValues(): array
@@ -61,6 +67,7 @@ class PaymentType extends AbstractStructEnumBase
             self::VALUE_DEBIT,
             self::VALUE_CASH,
             self::VALUE_PP,
+            self::VALUE_PAYBYLINK,
         ];
     }
 }

@@ -8,9 +8,10 @@ use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for MidocoMfBeanLocal StructType
+ * This class stands for DeleteUserJwtTokenResponse StructType
  * @subpackage Structs
  */
-class MidocoMfBeanLocal extends MfBeanLocalDTO
+#[\AllowDynamicProperties]
+class DeleteUserJwtTokenResponse extends AbstractStructBase
 {
 }
