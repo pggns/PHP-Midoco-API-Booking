@@ -20,6 +20,7 @@ class ClassMap
             'DunningInfo' => '\\Pggns\\MidocoApi\\Booking\\StructType\\DunningInfo',
             'CCPaymentAdditionalInfo' => '\\Pggns\\MidocoApi\\Booking\\StructType\\CCPaymentAdditionalInfo',
             'VerkDataInfo' => '\\Pggns\\MidocoApi\\Booking\\StructType\\VerkDataInfo',
+            'Cdf' => '\\Pggns\\MidocoApi\\Booking\\StructType\\Cdf',
             'FlightMealType' => '\\Pggns\\MidocoApi\\Booking\\StructType\\FlightMealType',
             'FlightSeatType' => '\\Pggns\\MidocoApi\\Booking\\StructType\\FlightSeatType',
             'AgencyInfoType' => '\\Pggns\\MidocoApi\\Booking\\StructType\\AgencyInfoType',
